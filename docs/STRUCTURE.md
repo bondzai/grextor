@@ -1,3 +1,4 @@
+```text
 grextor/
 ├── README.md
 ├── docker-compose.yml        # Qdrant + Neo4j
@@ -12,3 +13,4 @@ grextor/
 ├── data/
 │   └── sample_docs/
 └── examples/
+```
