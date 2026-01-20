@@ -31,3 +31,35 @@ Grextor answers both.
 ## Status
 
 Experimental PoC. Not production-ready.
+
+## Development
+
+### Prerequisites
+- Go 1.22+
+- Docker & Docker Compose (for dependencies)
+
+### Quick Start
+
+```bash
+# Clone the repo
+git clone https://github.com/bondzai/grextor.git
+cd grextor
+
+# Run tests
+make test
+
+# Build the project (creates grextor-ingest and grextor-query)
+make build
+
+# Run the application (example)
+./grextor-query
+```
+
+### Make Commands
+- `make test`: Run unit tests
+- `make test-cover`: Run tests with coverage report
+- `make build`: Compile the binaries (`grextor-ingest` & `grextor-query`)
+- `make run`: Show run instructions
+- `make clean`: Remove build artifacts and coverage files
+- `make fmt`: Format code
+
